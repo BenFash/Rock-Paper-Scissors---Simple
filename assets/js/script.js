@@ -16,9 +16,13 @@ window.addEventListener('load', () => {
     function clickedStart() {
         let home = document.querySelector("#homePage");
         let play = document.querySelector("#gameScreen");
-
+        document.getElementById("userScore").textContent = "Player Score: 0"
+        document.getElementById("compScore").textContent = "Comp Score: 0"
         home.style.display = "none";
         play.style.display = "block";
+        userScore = 0;
+        compScore = 0;
+
     }
 
     document.querySelector(".finishBtn").addEventListener("click", clickedFinish);
@@ -39,8 +43,6 @@ window.addEventListener('load', () => {
 
         finish.style.display = "none";
         home.style.display = "block";
-        userScore = 0;
-        compScore = 0;
 
     }
 
@@ -65,16 +67,16 @@ window.addEventListener('load', () => {
             //check if user has won and update HTML 
             if (winConditions[userChoice].includes(computerChoice)) {
                 document.getElementById("resultDisplay").textContent = "You Win👍";
-                userScore++;
+                ++userScore;
             } else if (computerChoice === userChoice) {
                 document.getElementById("resultDisplay").textContent = "It's a tie👔";
             } else {
-                document.getElementById("resultDisplay").textContent = "Computer Win👎";
-                compScore++;
+                document.getElementById("resultDisplay").textContent = "Computer Wins👎";
+                ++compScore;
             }
 
             //update scoreboard
-            document.getElementById("userScore").textContent = `User Score: ${userScore}`;
+            document.getElementById("userScore").textContent = `Player Score: ${userScore}`;
             document.getElementById("compScore").textContent = `Comp Score: ${compScore}`;
 
         }

@@ -16,6 +16,7 @@ body {
 
 h1 {
     font-size: 3.5rem;
+    margin-left: 15px;
 }
 
 .choices {
@@ -23,6 +24,7 @@ h1 {
 }
 
 .choices button {
+    text-align: center;
     font-size: 7.5rem;
     min-width: 160px;
     margin: 0 10px;
