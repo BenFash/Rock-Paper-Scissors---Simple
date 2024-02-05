@@ -39,6 +39,8 @@ window.addEventListener('load', () => {
 
         finish.style.display = "none";
         home.style.display = "block";
+        userScore = 0;
+        compScore = 0;
 
     }
 
