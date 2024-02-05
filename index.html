@@ -11,18 +11,33 @@
 
 <body>
 
-    <h1 class="title">Rock | Paper | Scissors </h1>
-
-    <div class="choices">
-        <button id="rock">🪨</button>
-        <button id="paper">🗞️</button>
-        <button id="scissors">✂️</button>
+    <div id="homePage">Welcome to Rock | Paper | Scissors. Created by Ben Fashan
+        <button class="startBtn">START GAME</button>
     </div>
 
-    <div id="playerDisplay">Player:</div>
-    <div id="computerDisplay">Computer:</div>
-    <div id="resultDisplay"></div>
 
+    <div id="gameScreen">
+        <h1 class="title">Rock | Paper | Scissors </h1>
+
+        <div class="choices">
+            <button class="choiceBtn" id="rock">🪨</button>
+            <button class="choiceBtn" id="paper">🗞️</button>
+            <button class="choiceBtn" id="scissors">✂️</button>
+        </div>
+
+        <div id="playerDisplay">Player:</div>
+        <div id="computerDisplay">Computer:</div>
+        <div id="resultDisplay"></div>
+        <div id="scoreDisplay">
+            <div id="userScore">User Score:</div>
+            <div id="compScore">Comp Score:</div>
+            <button class="finishBtn">Finish</button>
+        </div>
+    </div>
+
+    <div id="endScreen">Thanks for playing!
+        <button class="resetBtn">RESET GAME</button>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
